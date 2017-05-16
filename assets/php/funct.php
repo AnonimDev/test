@@ -10,9 +10,9 @@
 function security_input($data){
     GLOBAL $db_connect;
     $data = $db_connect->real_escape_string($data);
-    $data = htmlspecialchars($data, ENT_QUOTES);
-    $data = htmlentities($data);
-    $data = strip_tags($data);
+//    $data = htmlspecialchars($data, ENT_QUOTES);
+//    $data = htmlentities($data);
+//    $data = strip_tags($data);
     return $data;
 }
 

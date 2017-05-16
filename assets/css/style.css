@@ -16,7 +16,7 @@ html{
     display:block;
 }
 
-#menu{
+#menu, #menu2{
     width: 172px;
     margin:0 auto;
     height:40px;

@@ -38,7 +38,6 @@ switch ($mode) {
     case 'auth':
         include './assets/php/auth.php';
         include './assets/html/auth_form.html';
-        //include './assets/php/show.php';
         break;
     case 'logout':
         include './assets/php/logout.php';

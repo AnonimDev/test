@@ -22,4 +22,5 @@ if(isset($_POST['submit']))
     $click = $number + 1;
     $res = $db_connect->query("UPDATE `users` SET `click`= '$click' WHERE `login` = '$user'") or die($con->error);
     header('Location:'. HOST .'?mode=plu');
+    exit;
 }

@@ -68,15 +68,17 @@ if(isset($_POST['submit']))
                 else
                 {
                     //Получаем ХЕШ соли
-                    $salt = salt();
+                    //$salt = salt();
 
-                    $pass = md5(crypt(security_input($_POST['pass']), $salt));
+                    //$pass = md5(crypt(security_input($_POST['pass']), $salt));
+
+                    $pass = password_hash(security_input($_POST['pass']), PASSWORD_DEFAULT);
                     //Солим пароль
                     //$pass = md5(md5($_POST['pass']).$salt);
 
                     /*Если все хорошо, пишем данные в базу*/
 
-                    $res = $db_connect->query("INSERT INTO `users` (`login`, `pass`, `salt`, `date`, `age`, `click`)VALUES('{$login}', '{$pass}', '{$salt}', '{$date}', '{$bor}', 0)") or die($db_connect->error);
+                    $res = $db_connect->query("INSERT INTO `users` (`login`, `pass`, `date`, `age`, `click`)VALUES('{$login}', '{$pass}', '{$date}', '{$bor}', 0)") or die($db_connect->error);
 
                     //Сбрасываем параметры
                     header('Location:' . HOST . '?mode=reg&status=ok');

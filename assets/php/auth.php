@@ -33,14 +33,14 @@ if(isset($_POST['submit']))
             //Получаем данные из таблицы
             $row = $res->fetch_assoc();
 
-
             $password = security_input($_POST['pass']);
-            $salt = $row['salt'];
+            //$salt = $row['salt'];
             //$hash = crypt($password, $salt);
             $hash_db = $row['pass'];
 
 
-            if(md5(crypt($password, $salt)) == $hash_db)
+            //if(md5(crypt($password, $salt)) == $hash_db)
+            if (password_verify($password, $hash_db))
             {
                 $_SESSION['user'] = $login;
 
