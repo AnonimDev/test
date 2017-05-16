@@ -1,3 +1,13 @@
+html{
+    position	: absolute;
+    top		    : 0;
+    bottom		: 0;
+    left		: 0;
+    right		: 0;
+    margin		: auto;
+    height		: 240px;
+    width		: 70%;
+}
 #wrap {
     width: 800px;
     height:100%;
@@ -16,9 +26,19 @@
 #content {
     width: 800px;
     height:500;
-    margin:0 auto;
+    margin: 60px 0;
     /*outline:1px solid lime;*/
+    text-align: center;
+}
+#content form{
+    display: inline-block;
+}
 
+.label{
+    float: left;
+}
+.button{
+    margin: 10px auto;
 }
 
 .menu{

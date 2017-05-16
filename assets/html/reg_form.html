@@ -2,26 +2,28 @@
 <form action="" method="POST">
     <table>
         <tr>
-            <td>Логин<font color="red">*</font>:</td>
+            <td class="label">Логин<font color="red">*</font>:</td>
             <td><input type="text" size="30" name="login"></td>
         </tr>
         <tr>
-            <td>Пароль<font color="red">*</font>:</td>
+            <td class="label">Пароль<font color="red">*</font>:</td>
             <td><input type="password" size="30" maxlength="20" name="pass"></td>
         </tr>
         <tr>
-            <td>Подтверждения пароля<font color="red">*</font>:</td>
+            <td class="label">Подтверждения пароля<font color="red">*</font>:</td>
             <td><input type="password" size="30" maxlength="20" name="pass2"></td>
         </tr>
 
         <tr>
-            <td>Дата рождения<font color="red">*</font>:</td>
-            <td><input type="date" size="30" name="date"/></td>
+            <td class="label">Дата рождения<font color="red">*</font>:</td>
+            <td><input type="date" size="30" name="date" placeholder="Например, 01.02.2000"/></td>
         </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td colspan="2"><input type="submit" value="Зарегистроваться" name="submit"></td>
-        </tr>
+        <!--<tr>-->
+            <!--<td>&nbsp;</td>-->
+            <!--<td colspan="2"></td>-->
+        <!--</tr>-->
     </table>
+    <div class="button"><input type="submit" value="Зарегистроваться" name="submit"></div>
 </form>
+
 <br>Поля со значком <font color="red">*</font> обязательны для заполнения
