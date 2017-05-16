@@ -7,13 +7,8 @@ if(isset($_GET['status']) and $_GET['status'] == 'ok') {
 if(isset($_POST['submit']))
 {
     //Утюжим пришедшие данные
-    if(empty($_POST['email']))
-        $err[] = 'Поле Email не может быть пустым!';
-    else
-    {
-        if(!preg_match("/^[a-z0-9_.-]+@([a-z0-9]+.)+[a-z]{2,6}$/i", $_POST['email']))
-            $err[] = 'Не правильно введен E-mail'."\n";
-    }
+    if(empty($_POST['login']))
+        $err[] = 'Поле Логин не может быть пустым!';
 
     if(empty($_POST['pass']))
         $err[] = 'Поле Пароль не может быть пустым';
@@ -38,13 +33,13 @@ if(isset($_POST['submit']))
             echo showErrorMessage($err);
         else
         {
-            $email = security_input($_POST['email']);
+            $login = security_input($_POST['login']);
             /*Проверяем существует ли у нас
             такой пользователь в БД*/
-            $res = $db_connect->query("SELECT `login` FROM `users` WHERE `login` = '$email'") or die($db_connect->error);
+            $res = $db_connect->query("SELECT `login` FROM `users` WHERE `login` = '$login'") or die($db_connect->error);
 
             if($res->num_rows > 0)
-                $err[] = 'К сожалению Логин: <b>'. $_POST['email'] .'</b> занят!';
+                $err[] = 'К сожалению Логин: <b>'. $_POST['login'] .'</b> занят!';
 
             //Проверяем наличие ошибок и выводим пользователю
             if(count($err) > 0){
@@ -75,13 +70,13 @@ if(isset($_POST['submit']))
                     //Получаем ХЕШ соли
                     $salt = salt();
 
-                    $pass = md5(crypt($_POST['pass'], $salt));
+                    $pass = md5(crypt(security_input($_POST['pass']), $salt));
                     //Солим пароль
                     //$pass = md5(md5($_POST['pass']).$salt);
 
                     /*Если все хорошо, пишем данные в базу*/
 
-                    $res = $db_connect->query("INSERT INTO `users` (`login`, `pass`, `salt`, `date`, `age`)VALUES('{$email}', '{$pass}', '{$salt}', '{$date}', '{$bor}')") or die($db_connect->error);
+                    $res = $db_connect->query("INSERT INTO `users` (`login`, `pass`, `salt`, `date`, `age`, `click`)VALUES('{$login}', '{$pass}', '{$salt}', '{$date}', '{$bor}', 0)") or die($db_connect->error);
 
                     //Сбрасываем параметры
                     header('Location:' . HOST . '?mode=reg&status=ok');

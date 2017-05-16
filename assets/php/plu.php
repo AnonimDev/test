@@ -8,6 +8,7 @@ if(!defined('KEY'))
 
 if($user){
     $user = $_SESSION['user'];
+    //$user = 'qq';
     $res = $db_connect->query("SELECT * FROM `users` WHERE `login` = '$user'") or die($db_connect->error);
     $row = $res->fetch_assoc();
     $number = $row['click'];

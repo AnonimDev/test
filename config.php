@@ -17,13 +17,13 @@ if(!defined('KEY'))
 define('DBSERVER','localhost');
 
 //Логин БД
-define('DBUSER','root');
+define('DBUSER','');
 
 //Пароль БД
 define('DBPASSWORD','');
 
 //БД
-define('DATABASE','reg');
+define('DATABASE','');
 
 //Errors
 define('ERROR_CONNECT','Немогу соеденится с БД');

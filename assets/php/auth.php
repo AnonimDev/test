@@ -10,7 +10,7 @@ if(!defined('KEY'))
 //Если нажата кнопка то обрабатываем данные
 if(isset($_POST['submit']))
 {
-    if(empty($_POST['email']))
+    if(empty($_POST['login']))
         $err[] = 'Не введен Логин';
 
     if(empty($_POST['pass']))
@@ -21,10 +21,10 @@ if(isset($_POST['submit']))
         echo showErrorMessage($err);
     else
     {
-        $email = security_input($_POST['email']);
+        $login = security_input($_POST['login']);
         /*Проверяем существует ли у нас
         такой пользователь в БД*/
-        $res = $db_connect->query("SELECT * FROM `users` WHERE `login` = '$email'") or die($db_connect->error);
+        $res = $db_connect->query("SELECT * FROM `users` WHERE `login` = '$login'") or die($db_connect->error);
 
 
         //Если логин совподает, проверяем пароль
@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
             $row = $res->fetch_assoc();
 
 
-            $password = $_POST['pass'];
+            $password = security_input($_POST['pass']);
             $salt = $row['salt'];
             //$hash = crypt($password, $salt);
             $hash_db = $row['pass'];
@@ -42,7 +42,7 @@ if(isset($_POST['submit']))
 
             if(md5(crypt($password, $salt)) == $hash_db)
             {
-                $_SESSION['user'] = $email;
+                $_SESSION['user'] = $login;
 
                 //Сбрасываем параметры
                 header('Location:'. HOST .'');
@@ -52,7 +52,7 @@ if(isset($_POST['submit']))
                 echo showErrorMessage('Неверный пароль!');
         }
         else
-            echo showErrorMessage('Логин <b>'. $_POST['email'] .'</b> не найден!');
+            echo showErrorMessage('Логин <b>'. $_POST['login'] .'</b> не найден!');
     }
 
 }
