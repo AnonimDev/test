@@ -25,18 +25,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="208">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="352">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#9#41#0#PHP" expanded="true" />
               </folding>
@@ -44,14 +44,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="525">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1495020148783" expanded="true" signature="852:860" placeholder="..." />
+                <marker date="1495021042006" expanded="true" signature="851:859" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/php/plu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <marker date="1495020610143" expanded="true" signature="210:255" placeholder="SELECT * FRO... users" />
+                <marker date="1495020610143" expanded="true" signature="547:607" placeholder="UPDATE `user... " />
               </folding>
             </state>
           </provider>
@@ -97,19 +110,6 @@
             <state relative-caret-position="366">
               <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/php/plu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding>
-                <marker date="1495019598211" expanded="true" signature="191:236" placeholder="SELECT * FRO... users" />
-                <marker date="1495019598211" expanded="true" signature="528:588" placeholder="UPDATE `user... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -160,10 +160,10 @@
         <option value="$PROJECT_DIR$/assets/html/plus.html" />
         <option value="$PROJECT_DIR$/assets/html/reg_form.html" />
         <option value="$PROJECT_DIR$/assets/php/reg.php" />
-        <option value="$PROJECT_DIR$/assets/php/plu.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/assets/html/index.html" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/assets/php/plu.php" />
+        <option value="$PROJECT_DIR$/assets/html/index.html" />
       </list>
     </option>
   </component>
@@ -344,7 +344,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47416000" />
+    <option name="totallyTimeSpent" value="48233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
@@ -428,7 +428,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1495020148783" expanded="true" signature="852:860" placeholder="..." />
+            <marker date="1495021042006" expanded="true" signature="851:859" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -447,7 +447,7 @@
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1495020148783" expanded="true" signature="852:860" placeholder="..." />
+            <marker date="1495021042006" expanded="true" signature="851:859" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -559,8 +559,8 @@
         <state relative-caret-position="220">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <marker date="1495019598211" expanded="true" signature="191:236" placeholder="SELECT * FRO... users" />
-            <marker date="1495019598211" expanded="true" signature="528:588" placeholder="UPDATE `user... " />
+            <marker date="1495020610143" expanded="true" signature="210:255" placeholder="SELECT * FRO... users" />
+            <marker date="1495020610143" expanded="true" signature="547:607" placeholder="UPDATE `user... " />
           </folding>
         </state>
       </provider>
@@ -615,7 +615,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1495020148783" expanded="true" signature="852:860" placeholder="..." />
+            <marker date="1495021042006" expanded="true" signature="851:859" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -687,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/html/plus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/php/reg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1804">
@@ -715,22 +707,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/php/plu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <marker date="1495019598211" expanded="true" signature="191:236" placeholder="SELECT * FRO... users" />
-            <marker date="1495019598211" expanded="true" signature="528:588" placeholder="UPDATE `user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/auth_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#9#41#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -742,31 +741,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/assets/php/plu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="176">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <marker date="1495020610143" expanded="true" signature="210:255" placeholder="SELECT * FRO... users" />
+            <marker date="1495020610143" expanded="true" signature="547:607" placeholder="UPDATE `user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/html/plus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="525">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1495020148783" expanded="true" signature="852:860" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#9#41#0#PHP" expanded="true" />
+            <marker date="1495021042006" expanded="true" signature="851:859" placeholder="..." />
           </folding>
         </state>
       </provider>

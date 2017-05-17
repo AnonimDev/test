@@ -14,7 +14,7 @@
 <body>
 <div class="container" style="height: 100vh;">
     <div id="wrap">
-        <?php if(!isset($_SESSION['user'])): ?>
+        <?php if(empty($_SESSION['user'])): ?>
         <div id="menu">
             <div class="menu">
                 <ul>

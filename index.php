@@ -13,7 +13,6 @@ ob_start();
 
 //Определяем переменную для переключателя
 $mode = isset($_GET['mode'])  ? $_GET['mode'] : false;
-$user = isset($_SESSION['user']) ? $_SESSION['user'] : false;
 $err = array();
 
 //Устанавливаем ключ защиты

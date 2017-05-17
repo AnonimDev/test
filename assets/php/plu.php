@@ -6,7 +6,7 @@ if(!defined('KEY'))
     exit(file_get_contents('./../../404.php'));
 }
 
-if($user){
+if(isset($_SESSION['user'])){
     $user = $_SESSION['user'];
     $res = $db_connect->query("SELECT * FROM `users` WHERE `login` = '$user'") or die($db_connect->error);
     $row = $res->fetch_assoc();
