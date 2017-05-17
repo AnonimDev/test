@@ -16,7 +16,26 @@
 
         <tr>
             <td class="label">Дата рождения<font color="red">*</font>:</td>
-            <td><input type="date" size="30" name="date" placeholder="Например, 01.02.2000"/></td>
+            <!--<td><input type="date" size="30" name="date" placeholder="Например, 01.02.2000"/></td>-->
+
+        <td><select name="day"><option value=""></option><?php for ($i = 1; $i <= 31; $i++) echo '<option value="'.$i.'">'.$i.'</option>'; ?></select>
+        <select name="month">
+            <option value=""></option>
+            <option value="01">Январь</option>
+            <option value="02">Февраль</option>
+            <option value="03">Март</option>
+            <option value="04">Апрель</option>
+            <option value="05">Май</option>
+            <option value="06">Июнь</option>
+            <option value="07">Июль</option>
+            <option value="08">Август</option>
+            <option value="09">Сентябрь</option>
+            <option value="10">Октябрь</option>
+            <option value="11">Ноябрь</option>
+            <option value="12">Декабрь</option>
+        </select>
+        <select name="year"><option value=""></option><?php for ($i = date("Y"); $i >= 1800; $i--) echo '<option value="'.$i.'">'.$i.'</option>'; ?></select>
+        </td>
         </tr>
         <!--<tr>-->
             <!--<td>&nbsp;</td>-->

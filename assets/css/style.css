@@ -1,19 +1,13 @@
-html{
-    position	: absolute;
-    top		    : 0;
-    bottom		: 0;
-    left		: 0;
-    right		: 0;
-    margin		: auto;
-    height		: 240px;
-    width		: 70%;
+.container{
+    display:flex;
+    justify-content:center;
 }
 #wrap {
-    width: 800px;
-    height:100%;
-    margin:0 auto;
+    /*width: 800px;*/
+    /*height:100%;*/
+    margin:auto;
     /*outline:1px solid red;*/
-    display:block;
+    /*display:block;*/
 }
 
 #menu, #menu2{

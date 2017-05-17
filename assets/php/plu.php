@@ -8,7 +8,6 @@ if(!defined('KEY'))
 
 if($user){
     $user = $_SESSION['user'];
-    //$user = 'qq';
     $res = $db_connect->query("SELECT * FROM `users` WHERE `login` = '$user'") or die($db_connect->error);
     $row = $res->fetch_assoc();
     $number = $row['click'];
@@ -23,4 +22,9 @@ if(isset($_POST['submit']))
     $res = $db_connect->query("UPDATE `users` SET `click`= '$click' WHERE `login` = '$user'") or die($con->error);
     header('Location:'. HOST .'?mode=plu');
     exit;
+}
+
+if(isset($_POST['logout']))
+{
+    include './assets/php/logout.php';
 }

@@ -12,31 +12,23 @@
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="wrap">
-    <?php if(empty($user)): ?>
-    <div id="menu">
-        <div class="menu">
-            <ul>
-                <li><a href="<?php echo HOST; ?>?mode=auth">Войти</a></li>
-                <li><a href="<?php echo HOST; ?>?mode=reg">Регистрация</a></li>
-            </ul>
+<div class="container" style="height: 100vh;">
+    <div id="wrap">
+        <?php if(!isset($_SESSION['user'])): ?>
+        <div id="menu">
+            <div class="menu">
+                <ul>
+                    <li><a href="<?php echo HOST; ?>?mode=auth">Войти</a></li>
+                    <li><a href="<?php echo HOST; ?>?mode=reg">Регистрация</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <?php else: ?>
-    <div id="menu2">
-        <div class="menu">
-            <ul>
-                <li><a href="<?php echo HOST; ?>?mode=plu">+1</a></li>
-                <li><a href="<?php echo HOST; ?>?mode=logout">Выйти</a></li>
-            </ul>
+        <?php endif; ?>
+        <div id="content">
+            <?php echo $content; ?>
         </div>
-    </div>
-    <?php endif; ?>
-    <!--<div style="clear:both;"></div>-->
-    <div id="content">
-        <?php echo $content; ?>
-    </div>
 
+    </div>
 </div>
 </body>
 </html>

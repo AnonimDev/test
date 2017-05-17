@@ -28,6 +28,7 @@ include './assets/php/funct.php';
 //подключаем MySQL
 include './assets/php/bd.php';
 
+
 switch ($mode) {
     //Подключаем обработчик с формой регистрации
     case 'reg':
@@ -39,12 +40,13 @@ switch ($mode) {
         include './assets/php/auth.php';
         include './assets/html/auth_form.html';
         break;
-    case 'logout':
-        include './assets/php/logout.php';
-        break;
     case 'plu':
         include './assets/php/plu.php';
         include './assets/html/plus.html';
+        break;
+    default:
+        include './assets/php/auth.php';
+        include './assets/html/auth_form.html';
         break;
 }
 //Получаем данные с буфера
@@ -53,4 +55,5 @@ ob_end_clean();
 
 //Подключаем наш шаблон
 include './assets/html/index.html';
+
 ?>			

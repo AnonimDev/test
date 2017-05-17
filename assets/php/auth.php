@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
             //Получаем данные из таблицы
             $row = $res->fetch_assoc();
 
-            $password = security_input($_POST['pass']);
+            $password = $_POST['pass'];
             //$salt = $row['salt'];
             //$hash = crypt($password, $salt);
             $hash_db = $row['pass'];
@@ -44,8 +44,8 @@ if(isset($_POST['submit']))
             {
                 $_SESSION['user'] = $login;
 
-                //Сбрасываем параметры
-                header('Location:'. HOST .'');
+                
+                header('Location:'. HOST .'?mode=plu');
                 exit;
             }
             else
